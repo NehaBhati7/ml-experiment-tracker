@@ -1,2 +1,56 @@
-body { font-family: sans-serif; background-color: #f4f4f4; }
-table { background: white; width: 50%; }
+/* Body styling for better alignment */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Heading style */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Round corners ke liye */
+}
+
+/* Header cells */
+th {
+    background-color: #3498db;
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Data cells */
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+    color: #333;
+}
+
+/* Zebra striping (alternate rows) */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover effect */
+tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
